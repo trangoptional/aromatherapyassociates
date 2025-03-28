@@ -1,0 +1,558 @@
+@font-face {
+  font-family: "Mr Eaves Modern";
+  src: url("../assets/fonts/mreavesmodern.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.page-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  margin-top: 10vh;
+  align-items: center;
+}
+
+.page-banner__slide-container ,
+.page-banner__image  {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.page-banner__image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.page-banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 80%;
+}
+
+.page-banner-title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #071d49;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.page-banner-ders {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.page-banner-button {
+  padding: 10px 40px;
+  background-color: #071d49;
+  color: #f9f6f4;
+  font-size: 14px;
+  border: none;
+}
+
+.simple-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+.simple-text__description h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color:#071d49;
+}
+.simple-text__description p {
+  font-size: 14px;
+  color:#071d49;
+}
+
+/* ///////// */
+
+.faq-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  /* background: white; */
+}
+h2 {
+  color: #071d49;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  font-family: "Mr Eaves Modern", sans-serif;
+}
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+.faq-title {
+  color: #071d49;
+  font-family: "Mr Eaves Modern", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.faq-desc {
+  display: none;
+  padding: 0px 0 40px;
+  color: #071d49;
+  transition: all 0.3s;
+  font-weight: 350;
+  font-size: 14px;
+}
+.icon {
+  font-size: 1.2rem;
+  transition: all 0.5s;
+}
+
+/* /////cdd */
+
+.image-with-content {
+  width: 100%;
+  height: 80vh;
+}
+
+.image-with-content__container {
+  display: flex;
+  height: 80vh;
+}
+
+.image-with-content-item,
+.content-item {
+  width: 50%;
+  position: relative;
+}
+
+.image-with-content-item{
+  height: 100%;
+
+}
+
+.image-with-content__block-video {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-with-content__block-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-with-content-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.image-with-content-btn {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #071d49;
+}
+
+.info-content__container {
+  padding: 40px 60px;
+}
+
+.info-content__subtitle {
+  color: #a39161;
+  font-family: "Mr Eaves Modern", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  line-height: 100%;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.info-content__text p {
+  font-family: "Mr Eaves Modern", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1.09;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.info-content__btn {
+  background-color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 200px;
+  height: 40px;
+  margin: 40px auto;
+  display: flex;
+}
+
+.info-content__button {
+  color: #071d49;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: auto;
+}
+
+/* css phần 4 */
+.container__wide {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.four-tiles {
+  width: 100%;
+  text-align: center;
+}
+
+.four-tiles__title p {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #052463;
+}
+
+.four-tiles__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.four-tiles__content-wrapper {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.four-tiles__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.four-tiles__image img:hover {
+  transform: scale(1.1);
+}
+
+.four-tiles__description {
+  margin-top: 15px;
+  flex-grow: 1;
+}
+
+.four-tiles__description h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  letter-spacing: 0.18em;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.four-tiles__description p {
+  font-family: "mr-eaves-modern", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1.09;
+  color: #071d49;
+}
+
+.four-tiles__button {
+  margin-top: auto;
+  cursor: pointer;
+  color: #071d49;
+  text-underline-offset: 3px;
+  transition: background-color 0.3s;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.four-tiles__button:hover {
+  text-decoration: none;
+}
+
+
+/* //// css phần video  */
+
+.img-wrapper video {
+  height: 100%;
+  left: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.video-with-cta__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.video-with-cta__btn::before {
+  content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='25' fill='none'%3E%3Cpath fill='%23F9F6F4' d='M4 3.986L19 12.994 4 21.986V3.986ZM5.391 19.617l11.018-6.623L5.391 6.355v13.262Z'/%3E%3C/svg%3E");
+  margin-right: 8px;
+  display: inline-block;
+}
+
+
+.info-content__title {
+  color: #071d49;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  margin: 0;
+  
+}
+
+.video-with-cta__content-wrapper {
+  background-color: #f9f6f4;
+}
+
+.info-content__containers {
+  padding: 60px 80px ;
+}
+
+.list-description__li {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+  margin-bottom: 15px;
+}
+.list-description__block {
+  background-color: #E9E2D6;
+  border-radius: 50px;
+  flex-shrink: 0;
+  height: 48px;
+  position: relative;
+  width: 48px;
+}
+
+.list-description__number {
+  color: #071D49;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  left: 54%;
+  letter-spacing: .18em;
+  line-height: 100%;
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.faq-desc {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease; 
+}
+/* ////////////// css banner */
+
+
+.inline__text {
+  background-color: #071d49;
+  margin-bottom: 50px;
+}
+.inline__text-container {
+  padding: 60px 80px;
+  text-align: center;
+}
+.inline__text-bottom {
+  /* padding : 0px 200px; */
+}
+
+.inline__text-title  p , .inline__text-description p{
+  color: white;
+  font-weight: 350;
+  line-height: 1.09;
+}
+
+.inline__text-description {
+  margin-bottom: 40px;
+}
+
+.inline__text-button-wrapper {
+  width: 200px;
+  margin: auto;
+  background-color: white;
+  height: 50px;
+  line-height: 50px;;
+}
+
+.inline-text__btn {
+  text-decoration: none;
+  color: #071D49;
+  font-size: 14px;
+
+}
+
+
+/* css botttm */
+.inline__text-icon , .inline__text-title {
+  margin-bottom: 30px;
+}
+.inline__text-containers {
+  padding:  80px;
+}
+.inline__text-content {
+  max-width: 50%;
+  margin: auto;
+}
+.inline__text-titles p, .inline__text-descriptions p {
+  color: #071d49 !important;
+  margin-bottom: 20px;
+}
+
+/* ảnh bottom  */
+
+.inline-image__content {
+  display: flex;
+  padding: 0px  155px;
+  column-gap: 20px;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  row-gap: 84px;
+  margin-bottom: 200px;
+}
+.inline-image__item {
+  width: 50%;
+}
+.inline-image__image , .inline-image__image img {
+  width: 100%;
+  height: 100%;
+  transition: .3s;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.inline-image__image img:hover {
+  transform: scale(1.1);
+}
+
+.inline-item-bottom {
+  text-align: center;
+
+}
+
+.inline-item-bottom p {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px !important;
+  color: #071d49 !important;
+}
+
+.inline-image__button {
+  font-size: 15px;
+  color: #071d49 !important;
+}
+
+.inline-image__button:hover {
+  text-decoration: none;
+}
+
+
+/* css cho mobile  */
+.image-with-content {
+display: none;
+}
+
+.image-with-content {
+display: none;
+}
+
+@media screen and (max-width: 678px) {
+  .steps-container {
+    display: block;
+  }
+
+  .four-tiles__content {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .four-tiles__description h3 {
+    font-size: 13px;
+  }
+
+  .four-tiles__content-wrapper {
+    padding: 10px 40px;
+  }
+  .four-tiles__image img {
+    max-width: 50%;
+  }
+  .banner-image.desktop {
+    display: none; /* Ẩn ảnh PC */
+  }
+  
+  .banner-image.mobile {
+    display: block; /* Hiển thị ảnh Mobile */
+  }
+
+}

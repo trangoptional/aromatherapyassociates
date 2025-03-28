@@ -1,0 +1,849 @@
+/* 🏞️ Banner */
+.banner {
+  width: 100%;
+  margin-top: 10vh;
+  position: relative;
+  overflow: visible;
+  height: 60vh;
+}
+
+.banner-slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 100vw;
+  /* overflow: hidden;  */
+}
+
+/* 🔄 Swiper slides */
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+
+/* 🎮 Nút điều hướng */
+.banner-prev,
+.banner-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: var(--white-color);
+  border: none;
+  padding: var(--padding-medium);
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 11;
+  border-radius: 50%;
+}
+
+.banner-prev {
+  left: 10px;
+}
+
+.banner-next {
+  right: 10px;
+}
+
+.banner-prev:hover,
+.banner-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* ⚪ Pagination */
+.swiper-pagination {
+  align-items: center;
+  bottom: 48px !important;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+}
+
+/* Promotion Section */
+
+.quote-section {
+  text-align: center;
+}
+
+.quote-section__container {
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--padding-medium);
+}
+
+.quote-section__quote h4 {
+  font-size: var(--font-medium);
+  font-weight: bold;
+  color: #040404;
+  text-transform: uppercase;
+}
+
+.quote-section__quote p {
+  font-size: var(--font-large);
+  color: var(--primary-color);
+  margin-top: var(--margin-small);
+}
+
+/* list shop nổi bật */
+
+.shop-container {
+  gap: 40px;
+  justify-content: center;
+  display: flex;
+}
+.shop-card {
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+}
+
+.shop-image {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.shop-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.shop-image:hover img {
+  transform: scale(1.2);
+}
+.shop-detail {
+  padding: 20px 40px;
+  flex: 1 0 auto;
+}
+
+.shop-title {
+  color: #040404;
+}
+
+.shop-desc {
+  font-family: "mr-eaves-modern", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  color: #142850;
+  margin-bottom: 40px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+.buy-button {
+  background-color: #071d49;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.buy-button:hover {
+  background-color: #e65c00;
+}
+
+/*blog section */
+
+.blog-section__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.blog-section__image {
+  flex: 1;
+}
+
+.blog-section__image img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-section__content {
+  flex: 1;
+  text-align: center;
+}
+
+.blog-section__content h3 {
+  font-size: var(--font-large);
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.blog-section__content p {
+  font-size: 16px;
+  color: #1a2a5c;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.btn.primary {
+  display: inline-block;
+  background-color: #1a2a5c;
+  color: white;
+  padding: 12px 20px;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.btn.primary:hover {
+  background-color: #122044;
+}
+
+/* css danh sách sản phẩm bán chạy */
+.product-container--title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.best-seller-slider {
+  margin: 20px !important;
+  height: auto;
+}
+
+.product-cart {
+  text-align: center;
+  font-size: 18px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.product-card__image {
+  margin-bottom: 40px;
+}
+
+.product-cart img {
+  width: 100%;
+  height: 300px !important;
+  object-fit: cover;
+}
+.product-card__badge {
+  background-color: #071d49;
+  border-radius: 32px;
+  color: #f9f6f4;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  margin: 16px auto 0;
+  max-width: 250px;
+  padding: 8px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.product-card__metafields {
+  color: #a39161;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.43;
+}
+.product-card__title {
+  color: #071d49;
+  margin: 0 auto;
+  max-width: 230px;
+  text-align: center;
+  font-family: "freight-display-pro", serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.product-card__ratings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  color: #a39161;
+}
+
+.product-card__ratings p {
+  font-size: 14px;
+  color: #071d49;
+}
+
+.product-card__price-compare-container {
+  align-items: center;
+  color: #071d49;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.product-card__price--old {
+  color: #717171;
+  padding-left: 8px;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.product-card__sale {
+  align-items: center;
+  color: #071d49;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-left: 8px;
+}
+
+.product-card__button {
+  background-color: #f9f6f4;
+  box-sizing: border-box;
+  height: 100%;
+  margin: 24px 40px;
+  max-height: 42px;
+}
+
+.product-card__button button {
+  padding: 10px 40px;
+  font-family: "mr-eaves-modern", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.product-card__button button:hover {
+  background-color: #071d49;
+  color: #ffff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #071d49;
+  font-size: 14px;
+}
+
+.swiper-button-next {
+  right: 20px;
+}
+
+.swiper-button-prev {
+  left: 20px;
+}
+
+/* css banner  */
+.banner_4 {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.banner_4 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.banner_4-content {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+.banner_4-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.banner_4-content p {
+  margin: 15px 0;
+  font-size: 1em;
+}
+.banner_4-content .discount {
+  display: inline-block;
+  background-color: #001f3f;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.banner-image.desktop {
+  display: block;
+}
+
+.banner-image.mobile {
+  display: none;
+}
+
+/* css tiếp phần banner 5 */
+
+.banner_5 {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.banner_5-content {
+  width: 50%;
+  background-color: #001f3f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+.banner_5-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.banner_5-content p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.banner_5-content .cta {
+  display: inline-block;
+  background-color: white;
+  color: #001f3f;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-decoration: none;
+  width: fit-content;
+}
+.banner_5-image {
+  width: 50%;
+}
+.banner_5-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* csss list ex */
+
+.container_2 {
+  max-width: 1400px;
+  margin: auto;
+}
+.title {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #071d49;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card {
+  flex: 1;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.card-content {
+  padding: 20px 10px;
+}
+
+.card .image-container {
+  width: 100%;
+  height: 400px; /* Định chiều cao cố định để tránh ảnh hưởng đến layout */
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card .image-container:hover img {
+  transform: scale(1.1);
+}
+
+.card p {
+  margin: 15px 0;
+  color: #333;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1.09;
+}
+
+.card .btn {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 0px;
+  background-color: white;
+}
+
+/* blog banner */
+.blog-carousel {
+  display: flex;
+  align-items: flex-start;
+  display: flex;
+  height: 300px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.blog-carousel__content {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.blog-carousel__title {
+  padding-bottom: 16px;
+  color: #071d49;
+}
+
+.blog-carousel__description p {
+  color: #071d49;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 1.09;
+  font-family: "mr-eaves-modern", sans-serif;
+}
+.iblog-carousel__button a {
+  color: #071d49;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "mr-eaves-modern", sans-serif;
+}
+
+.blog-carousel__content__slide {
+  height: 100%;
+}
+
+.blog-carousel__content__slide__img,
+.blog-carousel__content__slide img,
+.swiper-slide {
+  height: 100% !important;
+}
+
+/* blog bottom */
+.benefits-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.benefits-icons__content {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+  max-width: 1360px;
+  width: 100%;
+}
+
+.benefits-icons__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 440px;
+  text-align: center;
+  width: 100%;
+}
+.benefits-icons__svg path {
+  fill: #a39161;
+}
+
+.benefits-icons__description {
+  max-width: 204px;
+  width: 100%;
+}
+
+.benefits-icons__description p {
+  color: #071d49;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  line-height: 22px;
+  margin: 0;
+}
+
+/* Responsive cho màn hình nhỏ */
+@media screen and (max-width: 768px) {
+  .banner {
+    height: 200px;
+    width: 100%;
+  }
+
+  .swiper-pagination {
+    bottom: 10px !important;
+  }
+
+  .banner-prev,
+  .banner-next {
+    font-size: 10px;
+    padding: 8px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet {
+    width: 5px;
+    height: 5px;
+  }
+
+  /* // css phần dưới banner */
+  .quote-section__container {
+    padding: 0px 10px;
+  }
+  .quote-section__quote h4 {
+    font-size: 14px;
+  }
+
+  .quote-section__quote p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .primary {
+    padding: 6px 10px !important;
+    font-size: 10px !important;
+  }
+
+  /* css lại list shop  */
+
+  .shop-container {
+    display: grid;
+    justify-content: center;
+  }
+  .shop-card {
+    width: 90%;
+    margin: auto;
+    box-shadow: none;
+    background: none;
+  }
+
+  .shop-image {
+    height: 250px;
+  }
+  .shop-desc {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .shop-title {
+    font-size: 14px;
+  }
+  .buy-button {
+    font-size: 10px;
+    height: 25px;
+  }
+
+  /* css phần list sản phẩm  */
+  .blog-section__container {
+    display: block;
+  }
+  .blog-section__image {
+    height: 350px;
+  }
+  .blog-section__image img {
+    height: 350px;
+    object-fit: cover;
+  }
+  .blog-section__content {
+    margin: 40px;
+  }
+  .blog-section__content h3 {
+    font-size: 25px;
+  }
+  .product-cart img {
+    height: 250px;
+  }
+  .product-card__badge {
+    padding: 8px;
+  }
+  .product-card__metafields,
+  .product-card__ratings,
+  .product-card__price-compare-container,
+  .product-card__sale {
+    font-size: 12px;
+  }
+  .product-card__button button,
+  .product-card__button button:hover {
+    font-size: 8px;
+    padding: 6px 6px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    height: 12px !important;
+    width: 12px !important;
+  }
+  .banner_4 {
+    border-radius: unset;
+  }
+  .banner_4-content {
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -12%);
+    width: 100%;
+    max-width: 100%;
+  }
+  .banner_4-content h1 {
+    font-size: 20px;
+  }
+  .banner_4-content .discount {
+    padding: 5px;
+    font-size: 10px;
+  }
+  .banner-image.desktop {
+    display: none;
+  }
+  
+  .banner-image.mobile {
+    display: block;
+  }
+
+  /* css lại phần  */
+  .banner_5 {
+    display: block;
+  }
+  .banner_5-content,
+  .banner_5-image {
+    width: 100%;
+    height: 400px;
+  }
+
+  .banner_5-content h1 {
+    font-size: 20px;
+  }
+
+  .banner_5-content p {
+    font-size: 14px;
+  }
+  .banner_5-content .cta {
+    padding: 5px 20px;
+    font-size: 10px;
+  }
+
+  /* csss phần exper  */
+  .title {
+    font-size: 18px;
+    padding: 30px 10px;
+    margin-bottom: 0px;
+  }
+  .cards {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  .card {
+    margin-bottom: 40px;
+  }
+  .card .image-container {
+    height: 300px;
+  }
+  .card p {
+    font-size: 14px;
+  }
+  .card .btn {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  /* css our  */
+  .blog-carousel {
+    display: block;
+    height: auto;
+  }
+  .blog-carousel__content {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+  .blog-carousel__title h2 {
+    font-size: 20px;
+  }
+  .blog-carousel__description p {
+    font-size: 14px;
+  }
+
+  .iblog-carousel__button a {
+    font-size: 12px;
+  }
+  .blog-carousel__content__slide {
+    height: 200px;
+  }
+
+  /* css phần cuối  */
+  .benefits-icons__content {
+    display: block;
+  }
+  .benefits-icons__item {
+    margin-bottom: 30px;
+    margin: 30px auto;
+  }
+  .benefits-icons__description p {
+    font-size: 10px;
+    max-width: 400px;;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner-prev,
+  .banner-next {
+    font-size: 14px;
+    padding: 6px;
+  }
+}

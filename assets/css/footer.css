@@ -1,0 +1,152 @@
+/* Reset mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color:  #071d49;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer__container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.subscribe h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.subscribe p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.subscribe input {
+  width: 70%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+.subscribe button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.footer__social {
+  margin-top: 15px;
+}
+
+.footer__social a {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 2;
+  min-width: 280px;
+}
+
+.footer__block h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer__block ul {
+  list-style: none;
+}
+
+.footer__block li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.footer__payment-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-top: 40px;
+}
+
+.payment-method img {
+  width: 50px;
+}
+
+.footer__down {
+  text-align: left;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+.footer__down-links ul {
+  display: flex;
+  justify-content: left;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer__down-links li {
+  margin-right: 10px;
+}
+
+.footer__down-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .footer__content {
+    display: block;
+  }
+  .footer__info {
+    margin-bottom: 30px;
+  }
+  .footer__links {
+    display:block;
+    align-items: left;
+  }
+  .footer__block {
+    margin-bottom: 30px;
+  }
+
+  .subscribe input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer__payment-icons {
+    justify-content: space-between;
+  }
+}

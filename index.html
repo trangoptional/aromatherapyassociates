@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+
+    <!-- CSS Stylesheets -->
+
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Scripts -->
+    <script src="load-header.js" defer></script>
+    <script src="load-footer.js" defer></script>
+    <script src="/assets/js/home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header-container"></div>
+
+    <!-- Banner -->
+    <section class="banner">
+      <div class="swiper banner-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="//www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=3840"
+              srcset="
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=300   300w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=400   400w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=500   500w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=600   600w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=700   700w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=800   800w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=1000 1000w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=1200 1200w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=1400 1400w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=1600 1600w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=1800 1800w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=2000 2000w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=2400 2400w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=2800 2800w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=3200 3200w,
+                //www.aromatherapyassociates.com/cdn/shop/files/Double_Points_Banner_DT_3840x1600x3.jpg?v=1742591488&amp;width=3600 3600w
+              "
+              width="3840"
+              height="1600"
+              loading="eager"
+            />
+            <!-- <img
+              src="https://www.aromatherapyassociates.com/cdn/shop/files/WEEK20_GWP_SET_DT_3840x2160_47696aa5-bc6b-498c-b336-b799eeb4d748.jpg"
+            /> -->
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://www.aromatherapyassociates.com/cdn/shop/files/WEEK24_20OFF_SALE_DT_3840x2160_a63ef30b-2557-46d0-a5d0-0114b561345f.jpg"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="//www.aromatherapyassociates.com/cdn/shop/files/WEEK25_ROSE_TRIO_DT_3840x2160_02.gif"
+            />
+          </div>
+        </div>
+        <button class="banner-prev">&#10094;</button>
+        <button class="banner-next">&#10095;</button>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Promotion Section -->
+    <section class="quote-section">
+      <div class="quote-section__container center">
+        <div class="quote-section__quote">
+          <h4>20% off sitewide</h4>
+          <p>Enjoy uninterrupted sleep with our Deep Relax collection</p>
+        </div>
+        <div class="quote-section__btn">
+          <a href="/collections/rose" class="btn primary">Use Code FEB20</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Shops -->
+    <section class="shop-container" id="shop-list"></section>
+
+    <!-- blog-section -->
+    <section class="blog-section">
+      <div class="blog-section__container center">
+        <div class="blog-section__image">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_bedroom.jpg"
+          />
+        </div>
+        <div class="blog-section__content">
+          <h3>Rich, immersive home fragrance</h3>
+          <p>
+            Crafted with care, there's a Pure Essential Oil Blend to suit every
+            mood. Diffuse through our Atomiser Connect to gift a personalised
+            scent experience for yourself or loved ones.
+          </p>
+          <a href="/collections/home-fragrance" class="btn primary"
+            >20% OFF WITH CODE SPRING20</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="quote-section">
+      <div
+        class="quote-section__quote product-container--title blog-section__content"
+      >
+        <h3>Our Bestsellers</h3>
+      </div>
+
+      <div class="swiper best-seller-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide product-cart">
+            <div class="product-card__content">
+              <div class="product-card__image">
+                <img
+                  src="//www.aromatherapyassociates.com/cdn/shop/files/RN924002_2_highres.png"
+                />
+              </div>
+
+              <div class="product-card__main">
+                <div class="product-card__badge">
+                  50% SAVINGS | WORTH
+                  <span x-price="32900000">₫329000.00</span>
+                </div>
+                <div class="product-card__metafields eyebrow">
+                  Energise &amp; Awaken
+                </div>
+                <h5 class="product-card__title">Energy Restore Hero</h5>
+                <div class="product-card__ratings">
+                  ★★★★★
+                  <p class="product-card__ratings__title">15 Reviews</p>
+                </div>
+                <div class="product-card__price-compare">
+                  <h4 class="product-card__price-compare-container">
+                    <div class="product-card__price" x-price="16500000">
+                      ₫165000.00
+                    </div>
+                    <div class="product-card__price--old" x-price="32900000">
+                      ₫329000.00
+                    </div>
+                  </h4>
+
+                  <h4 class="product-card__sale">
+                    (-
+                    <span x-text="calculatePrice(32900000,16500000)">50%</span>)
+                    <div class="product-card__size">/ 9ml</div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-card__button">
+              <button>Quick Buy</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide product-cart">
+            <div class="product-card__content">
+              <div class="product-card__image">
+                <img
+                  src="//www.aromatherapyassociates.com/cdn/shop/files/RN924001_2_highres.png"
+                />
+              </div>
+              <div class="product-card__main">
+                <div class="product-card__badge">
+                  50% SAVINGS | WORTH
+                  <span x-price="32900000">₫329000.00</span>
+                </div>
+                <div class="product-card__metafields eyebrow">
+                  Energise &amp; Awaken
+                </div>
+                <h5 class="product-card__title">Energy Restore Hero</h5>
+                <div class="product-card__ratings">
+                  ★★★★★
+                  <p class="product-card__ratings__title">15 Reviews</p>
+                </div>
+                <div class="product-card__price-compare">
+                  <h4 class="product-card__price-compare-container">
+                    <div class="product-card__price" x-price="16500000">
+                      ₫165000.00
+                    </div>
+                    <div class="product-card__price--old" x-price="32900000">
+                      ₫329000.00
+                    </div>
+                  </h4>
+                  <h4
+                    class="product-card__sale"
+                    x-data="pricePercent"
+                    ax-load=""
+                    ax-load-src="//www.aromatherapyassociates.com/cdn/shop/t/179/assets/astound.alpine.pricePercent.js?v=142205051857849351721726048084"
+                  >
+                    (-
+                    <span x-text="calculatePrice(32900000,16500000)">50%</span>)
+                    <div class="product-card__size">/ 9ml</div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__button">
+              <button>Quick Buy</button>
+            </div>
+          </div>
+          <div class="swiper-slide product-cart">
+            <div class="product-card__content">
+              <div class="product-card__image">
+                <img
+                  src="//www.aromatherapyassociates.com/cdn/shop/files/RN514055R_main_Award.png"
+                />
+              </div>
+              <div class="product-card__main">
+                <div class="product-card__badge">
+                  50% SAVINGS | WORTH
+                  <span x-price="32900000">₫329000.00</span>
+                </div>
+                <div class="product-card__metafields eyebrow">
+                  Energise &amp; Awaken
+                </div>
+                <h5 class="product-card__title">Energy Restore Hero</h5>
+                <div class="product-card__ratings">
+                  ★★★★★
+                  <p class="product-card__ratings__title">15 Reviews</p>
+                </div>
+                <div class="product-card__price-compare">
+                  <h4 class="product-card__price-compare-container">
+                    <div class="product-card__price" x-price="16500000">
+                      ₫165000.00
+                    </div>
+                    <div class="product-card__price--old" x-price="32900000">
+                      ₫329000.00
+                    </div>
+                  </h4>
+                  <h4
+                    class="product-card__sale"
+                    x-data="pricePercent"
+                    ax-load=""
+                    ax-load-src="//www.aromatherapyassociates.com/cdn/shop/t/179/assets/astound.alpine.pricePercent.js?v=142205051857849351721726048084"
+                  >
+                    (-
+                    <span x-text="calculatePrice(32900000,16500000)">50%</span>)
+                    <div class="product-card__size">/ 9ml</div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__button">
+              <button>Quick Buy</button>
+            </div>
+          </div>
+          <div class="swiper-slide product-cart">
+            <div class="product-card__content">
+              <div class="product-card__image">
+                <img
+                  src="//www.aromatherapyassociates.com/cdn/shop/files/RN924005_4_highres.png"
+                />
+              </div>
+              <div class="product-card__main">
+                <div class="product-card__badge">
+                  50% SAVINGS | WORTH
+                  <span x-price="32900000">₫329000.00</span>
+                </div>
+                <div class="product-card__metafields eyebrow">
+                  Energise &amp; Awaken
+                </div>
+                <h5 class="product-card__title">Energy Restore Hero</h5>
+                <div class="product-card__ratings">
+                  ★★★★★
+                  <p class="product-card__ratings__title">15 Reviews</p>
+                </div>
+                <div class="product-card__price-compare">
+                  <h4 class="product-card__price-compare-container">
+                    <div class="product-card__price" x-price="16500000">
+                      ₫165000.00
+                    </div>
+                    <div class="product-card__price--old" x-price="32900000">
+                      ₫329000.00
+                    </div>
+                  </h4>
+                  <h4
+                    class="product-card__sale"
+                    x-data="pricePercent"
+                    ax-load=""
+                    ax-load-src="//www.aromatherapyassociates.com/cdn/shop/t/179/assets/astound.alpine.pricePercent.js?v=142205051857849351721726048084"
+                  >
+                    (-
+                    <span x-text="calculatePrice(32900000,16500000)">50%</span>)
+                    <div class="product-card__size">/ 9ml</div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__button">
+              <button>Quick Buy</button>
+            </div>
+          </div>
+          <div class="swiper-slide product-cart">
+            <div class="product-card__content">
+              <div class="product-card__image">
+                <img
+                  src="//www.aromatherapyassociates.com/cdn/shop/files/RN200050N_Main.png"
+                />
+              </div>
+              <div class="product-card__main">
+                <div class="product-card__badge">
+                  50% SAVINGS | WORTH
+                  <span x-price="32900000">₫329000.00</span>
+                </div>
+                <div class="product-card__metafields eyebrow">
+                  Energise &amp; Awaken
+                </div>
+                <h5 class="product-card__title">Energy Restore Hero</h5>
+                <div class="product-card__ratings">
+                  ★★★★★
+                  <p class="product-card__ratings__title">15 Reviews</p>
+                </div>
+                <div class="product-card__price-compare">
+                  <h4 class="product-card__price-compare-container">
+                    <div class="product-card__price" x-price="16500000">
+                      ₫165000.00
+                    </div>
+                    <div class="product-card__price--old" x-price="32900000">
+                      ₫329000.00
+                    </div>
+                  </h4>
+                  <h4
+                    class="product-card__sale"
+                    x-data="pricePercent"
+                    ax-load=""
+                    ax-load-src="//www.aromatherapyassociates.com/cdn/shop/t/179/assets/astound.alpine.pricePercent.js?v=142205051857849351721726048084"
+                  >
+                    (-
+                    <span x-text="calculatePrice(32900000,16500000)">50%</span>)
+                    <div class="product-card__size">/ 9ml</div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__button">
+              <button>Quick Buy</button>
+            </div>
+          </div>
+          <div class="swiper-slide product-cart">
+            <div class="product-card__content">
+              <div class="product-card__image">
+                <img
+                  src="//www.aromatherapyassociates.com/cdn/shop/products/RN831150R_main.png"
+                />
+              </div>
+              <div class="product-card__main">
+                <div class="product-card__badge">
+                  50% SAVINGS | WORTH
+                  <span x-price="32900000">₫329000.00</span>
+                </div>
+                <div class="product-card__metafields eyebrow">
+                  Energise &amp; Awaken
+                </div>
+                <h5 class="product-card__title">Energy Restore Hero</h5>
+                <div class="product-card__ratings">
+                  ★★★★★
+                  <p class="product-card__ratings__title">15 Reviews</p>
+                </div>
+                <div class="product-card__price-compare">
+                  <h4 class="product-card__price-compare-container">
+                    <div class="product-card__price" x-price="16500000">
+                      ₫165000.00
+                    </div>
+                    <div class="product-card__price--old" x-price="32900000">
+                      ₫329000.00
+                    </div>
+                  </h4>
+                  <h4
+                    class="product-card__sale"
+                    x-data="pricePercent"
+                    ax-load=""
+                    ax-load-src="//www.aromatherapyassociates.com/cdn/shop/t/179/assets/astound.alpine.pricePercent.js?v=142205051857849351721726048084"
+                  >
+                    (-
+                    <span x-text="calculatePrice(32900000,16500000)">50%</span>)
+                    <div class="product-card__size">/ 9ml</div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__button">
+              <button>Quick Buy</button>
+            </div>
+          </div>
+          <div class="swiper-slide product-cart">
+            <div class="product-card__content">
+              <div class="product-card__image">
+                <img
+                  src="//www.aromatherapyassociates.com/cdn/shop/products/RN570010_main.png"
+                />
+              </div>
+              <div class="product-card__main">
+                <div class="product-card__badge">
+                  50% SAVINGS | WORTH
+                  <span x-price="32900000">₫329000.00</span>
+                </div>
+                <div class="product-card__metafields eyebrow">
+                  Energise &amp; Awaken
+                </div>
+                <h5 class="product-card__title">Energy Restore Hero</h5>
+                <div class="product-card__ratings">
+                  ★★★★★
+                  <p class="product-card__ratings__title">15 Reviews</p>
+                </div>
+                <div class="product-card__price-compare">
+                  <h4 class="product-card__price-compare-container">
+                    <div class="product-card__price" x-price="16500000">
+                      ₫165000.00
+                    </div>
+                    <div class="product-card__price--old" x-price="32900000">
+                      ₫329000.00
+                    </div>
+                  </h4>
+                  <h4
+                    class="product-card__sale"
+                    x-data="pricePercent"
+                    ax-load=""
+                    ax-load-src="//www.aromatherapyassociates.com/cdn/shop/t/179/assets/astound.alpine.pricePercent.js?v=142205051857849351721726048084"
+                  >
+                    (-
+                    <span x-text="calculatePrice(32900000,16500000)">50%</span>)
+                    <div class="product-card__size">/ 9ml</div>
+                  </h4>
+                </div>
+              </div>
+            </div>
+            <div class="product-card__button">
+              <button>Quick Buy</button>
+            </div>
+          </div>
+        </div>
+        <!-- Pagination & Navigation  -->
+        <div class="swiper-button-next best-seller-next"></div>
+        <div class="swiper-button-prev best-seller-prev"></div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="banner_4">
+        <img
+          class="banner-image desktop"
+          src="//www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=3171"
+          srcset="
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=300   300w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=400   400w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=500   500w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=600   600w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=700   700w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=800   800w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=1000 1000w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=1200 1200w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=1400 1400w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=1600 1600w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=1800 1800w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=2000 2000w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=2400 2400w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_DT_3171x1250_v2.jpg?v=1740995358&amp;width=2800 2800w
+          "
+          width="3171"
+          height="1250"
+          loading="lazy"
+        />
+
+        <img
+          class="banner-image mobile"
+          src="//www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_MB_750x1008_v2.jpg?v=1740995357&amp;width=750"
+          srcset="
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_MB_750x1008_v2.jpg?v=1740995357&amp;width=300 300w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_MB_750x1008_v2.jpg?v=1740995357&amp;width=400 400w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_MB_750x1008_v2.jpg?v=1740995357&amp;width=500 500w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_MB_750x1008_v2.jpg?v=1740995357&amp;width=600 600w,
+            //www.aromatherapyassociates.com/cdn/shop/files/WEEK25_SKINCARE_OFFER_MB_750x1008_v2.jpg?v=1740995357&amp;width=700 700w
+          "
+          width="750"
+          height="1008"
+          loading="lazy"
+        />
+        <div class="banner_4-content">
+          <h1>Experience our spa facials from home</h1>
+          <p>
+            Discover Skincare powered by our Bioactive™ Complex of botanical
+            actives, skin-stress relief technology & essential oils
+          </p>
+          <div class="discount">20% OFF WITH CODE SPRING20</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="banner_4 banner_5">
+        <div class="banner_5-content">
+          <h1>The Mandarin Spa at Mandarin Oriental, Hong Kong</h1>
+          <p>
+            An urban retreat offering a seamless blend of Eastern traditions and
+            contemporary wellness, experience the transformative Pause & Reset
+            treatment, where expert hands and the finest essential oils come
+            together to support women's health at every stage of life...
+          </p>
+          <a href="#" class="cta">Your Next Spa Break Awaits</a>
+        </div>
+        <div class="banner_5-image">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/Mandarin-Oriental-Hong-Kong-Hotel-Spa-Reception_1-1_crop.jpg"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="container_2">
+        <h1 class="title">Experience the power of Aromatherapy</h1>
+        <div class="cards">
+          <div class="card">
+            <div class="image-container">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/files/WEEK23_BIO_ACTIVE_EMAIL_1000x1000_62e7447f-b594-4a8f-adff-1bd85db69477.jpg"
+              />
+            </div>
+            <div class="card-content">
+              <p>
+                Powered by BioActive™ Complex, experience an Aromatherapy
+                Associates facial for beautiful skin & a balanced mind
+              </p>
+              <a href="#" class="btn">Discover Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/files/cropped_massage.jpg"
+              />
+            </div>
+            <div class="card-content">
+              <p>
+                Experience our expert-led techniques & botanical-rich essential
+                oils in our transformative spa treatments & facials
+              </p>
+              <a href="#" class="btn">Spa Finder</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/products/RN640100R_6_8201b808-df60-48c3-9164-f12753234fd5.png"
+              />
+            </div>
+            <div class="card-content">
+              <p>
+                Visit us in stores world-wide where you can explore, test &
+                experience the full power of our products first-hand
+              </p>
+              <a href="#" class="btn">Store Finder</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blog  -->
+    <section class="quote-section">
+      <div class="blog-carousel">
+        <div class="blog-carousel__content">
+          <div class="blog-carousel__title">
+            <h2>Our Journal</h2>
+          </div>
+          <div class="blog-carousel__description">
+            <p>
+              Whether you're a seasoned aromatherapy enthusiast or just
+              beginning your journey, explore our spa partners, dive into our
+              expert tips and practical advice to start living your best life
+              today.
+            </p>
+          </div>
+          <div class="iblog-carousel__button">
+            <a href="/blogs/our-journal" class="link blog-carousel__button">
+              Browse Our Journal
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper blog-carousel__content__slide">
+          <div class="swiper-wrapper blog-carousel__content__slide__img">
+            <div class="swiper-slide">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/articles/Mandarin_Oriental_Barcelona_79353ebb-198c-482d-bb90-ea58a156bbe5_grande.png?v=1742387565"
+                alt="Spa Of The Month: Mandarin Oriental, Barcelona"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/articles/DepthOfLight_1_Atom_grande.png?v=1737376915"
+                alt="Our Team's Verdict on the Inner Light Pure Essential Oil Blend"
+              />
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/articles/Mandarin_Oriental_Barcelona_79353ebb-198c-482d-bb90-ea58a156bbe5_grande.png?v=1742387565"
+                alt="Spa Of The Month: Mandarin Oriental, Barcelona"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/articles/spa-treatment-room_grande.jpg?v=1732119668"
+                alt="Dimly lit spa room in Bryn Tanat Hall"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/articles/spa-treatment-room_grande.jpg?v=1732119668"
+                alt="Dimly lit spa room in Bryn Tanat Hall"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="benefits-icons">
+        <div class="benefits-icons__content">
+          <div class="benefits-icons__item">
+            <div class="benefits-icons__svg">
+              <svg
+                width="44"
+                height="43"
+                viewBox="0 0 44 43"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M5.67151 43C5.20773 43 4.83091 42.6231 4.83091 42.1594V21.3573H1.73639C1.27261 21.3573 0.895782 20.9804 0.895782 20.5166V11.6624C0.895782 11.1995 1.27261 10.8218 1.73639 10.8218H12.7354C11.4679 9.64739 10.7345 8.00128 10.7345 6.25152C10.7345 2.80471 13.5382 0 16.985 0C19.3663 0 21.5376 1.37205 22.5855 3.47756C23.6536 1.92456 25.4086 0.9838 27.3138 0.9838C30.49 0.9838 33.0733 3.56715 33.0733 6.74342C33.0733 8.28237 32.4514 9.74841 31.3745 10.8218H43.0543C43.5181 10.8218 43.8949 11.1986 43.8949 11.6624V20.5166C43.8949 20.9804 43.5181 21.3573 43.0543 21.3573H39.9598V42.1602C39.9598 42.6232 39.583 43.0009 39.1192 43.0009H5.67151V43ZM38.2794 41.3187V21.3564H27.1715V41.3187H38.2794ZM25.4903 41.3187V21.3564H19.3013V41.3187H25.4903ZM17.6201 41.3187V21.3564H6.51124V41.3187H17.6192H17.6201ZM42.2146 19.676V12.5022H27.1715V19.676H42.2146ZM25.4903 19.676V12.5022H19.3013V19.676H25.4903ZM17.6201 19.676V12.5022H2.57612V19.676H17.6201ZM16.985 1.68124C14.4649 1.68124 12.4148 3.73141 12.4148 6.25152C12.4148 8.77163 14.4649 10.8218 16.985 10.8218H21.5552V6.25152C21.5552 3.73141 19.505 1.68124 16.985 1.68124ZM27.3147 10.8218C29.5633 10.8218 31.393 8.99211 31.393 6.74342C31.393 4.49474 29.5633 2.66505 27.3147 2.66505C25.066 2.66505 23.2364 4.49474 23.2364 6.74342V10.8218H27.3147Z"
+                  fill="#071D49"
+                ></path>
+              </svg>
+            </div>
+            <div class="benefits-icons__description">
+              <p>
+                EARN POINTS EVERY TIME YOU SHOP WHEN YOU JOIN THE REWARD CLUB
+              </p>
+            </div>
+          </div>
+
+          <div class="benefits-icons__item">
+            <div class="benefits-icons__svg">
+              <svg
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M40.0023 20.472C40.0023 9.19836 31.0283 0 19.975 0C8.92164 0 0.00234985 9.19836 0.00234985 20.472C0.00234985 26.1368 2.24585 31.2969 5.91206 34.9986L6.13094 35.5034C6.24038 35.4473 6.2951 35.4473 6.40454 35.3912C9.96131 38.8126 14.7766 40.9439 20.0297 40.9439C25.3922 40.9439 30.2623 38.7565 33.8738 35.223H33.9285L33.9832 35.1108C37.6494 31.409 40.0023 26.249 40.0023 20.472ZM32.2869 32.9795C32.9435 29.6142 33.2718 26.1368 33.2718 22.5472C33.2718 22.1546 33.2718 21.762 33.2718 21.3694H38.306C38.0872 25.9685 36.2814 30.119 33.3813 33.316C32.9982 33.2038 32.6699 33.0917 32.2869 32.9795ZM6.78758 33.4843C3.83272 30.2873 1.91753 26.0246 1.69866 21.3694H6.67814C6.62342 22.0985 6.62342 22.7715 6.62342 23.5007C6.62342 26.8659 6.89701 30.119 7.49893 33.2599C7.28005 33.316 7.06117 33.3721 6.78758 33.4843ZM34.0926 8.52531C36.555 11.554 38.1419 15.4241 38.306 19.6306H33.2718C33.1077 16.041 32.5605 12.5636 31.685 9.31053C32.5058 9.0301 33.2718 8.80575 34.0926 8.52531ZM31.1925 7.62791C30.9189 6.73051 30.6453 5.83311 30.317 4.99179C31.2472 5.60876 32.068 6.33789 32.8341 7.12312C32.2869 7.29138 31.7397 7.45964 31.1925 7.62791ZM31.5755 19.6306H8.48388C8.70276 16.2654 9.30468 12.9562 10.1255 9.9275C13.135 10.5445 16.3088 10.881 19.592 10.881C23.2034 10.881 26.7602 10.4884 29.9887 9.70315C30.8642 12.844 31.3567 16.1532 31.5755 19.6306ZM6.78758 19.6306H1.69866C1.86281 15.5363 3.39496 11.7223 5.7479 8.69357C6.62342 8.97401 7.55365 9.25445 8.48388 9.53488C7.60837 12.7319 7.06117 16.1532 6.78758 19.6306ZM8.31972 23.5007C8.31972 22.7715 8.31972 22.0985 8.37444 21.3694H31.5755C31.5755 21.762 31.6303 22.1546 31.6303 22.5472C31.6303 26.0246 31.3019 29.3338 30.6453 32.5308C27.4716 31.8016 23.9695 31.409 20.358 31.409C16.4182 31.409 12.5878 31.8577 9.14052 32.8112C8.59332 29.7825 8.31972 26.6977 8.31972 23.5007ZM27.8546 3.53352C28.5112 4.99179 29.0584 6.45007 29.5509 8.02052C26.4319 8.74966 23.094 9.14227 19.592 9.14227C16.4729 9.14227 13.4634 8.80575 10.6179 8.24487C11.1651 6.50616 11.8765 4.82353 12.6426 3.25308C14.8861 2.2435 17.3485 1.68263 19.975 1.68263C22.8204 1.73871 25.5017 2.35568 27.8546 3.53352ZM10.1802 4.65527C9.74243 5.72093 9.3594 6.78659 8.97636 7.90835C8.265 7.74008 7.60837 7.51573 6.95173 7.34747C7.93669 6.28181 9.03108 5.44049 10.1802 4.65527ZM9.90659 36.1204C9.74243 35.5595 9.63299 34.9986 9.52355 34.4378C12.8614 33.5404 16.5824 33.0917 20.4127 33.0917C23.8601 33.0917 27.2527 33.4843 30.3717 34.2134C30.2075 34.9425 30.0434 35.6156 29.8245 36.3447C26.9244 38.1956 23.5865 39.2613 19.975 39.2613C16.2541 39.2613 12.8067 38.0835 9.90659 36.1204ZM31.9039 34.7182C31.9586 34.7182 31.9586 34.6621 31.9039 34.7182C31.9586 34.6621 31.9586 34.6621 31.9039 34.7182C31.9586 34.6621 31.9586 34.7182 31.9039 34.7182Z"
+                  fill="#071D49"
+                ></path>
+              </svg>
+            </div>
+            <div class="benefits-icons__description">
+              <p>FREE SHIPPING WHEN YOU SPEND £70 OR MORE</p>
+            </div>
+          </div>
+
+          <div class="benefits-icons__item">
+            <div class="benefits-icons__svg">
+              <svg
+                width="41"
+                height="41"
+                viewBox="0 0 41 41"
+                fill="#A39161"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M37.9152 9.75923V0.280438H36.1765V7.34747C32.4186 2.86047 26.8099 0 20.472 0C9.19836 0 0 9.19836 0 20.472C0 31.7456 9.19836 40.9439 20.472 40.9439C31.7456 40.9439 40.9439 31.7456 40.9439 20.472C41 16.5458 39.8782 12.844 37.9152 9.75923ZM20.472 39.2613C10.1518 39.2613 1.73871 30.8482 1.73871 20.472C1.73871 10.0958 10.1518 1.68263 20.528 1.68263C26.7538 1.68263 32.2503 4.71135 35.6717 9.36662H27.539V11.1053H36.7373C38.3078 13.8536 39.2613 17.0506 39.2613 20.472C39.2613 30.8482 30.8482 39.2613 20.472 39.2613Z"
+                  fill="#071D49"
+                ></path>
+              </svg>
+            </div>
+            <div class="benefits-icons__description">
+              <p>REFER A FRIEND</p>
+              <p>GIVE THEM £15, GET £15 FOR YOURSELF</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <div id="footer-container"></div>
+</html>

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build A Bundle</title>
+    <script src="../load-header.js" defer></script>
+    <script src="../load-footer.js" defer></script>
+    <link rel="stylesheet" href="../assets/css/bundle.css" />
+    <link rel="stylesheet" href="../assets/css/diffusers.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mr+Eaves+Modern&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Load header -->
+    <div id="header-container"></div>
+
+    <!-- body -->
+
+    <div class="plp-default-banner">
+      <h1 class="plp-default-banner__title">The Atomisers</h1>
+      <div class="plp-quick-filters__banner-description-wrapper">
+        <p style="text-align: center">
+          Waterless, heatless and wireless, the Atomisers are
+          multi-award-winning diffusers innovated to deliver pure, undiluted
+          fragrance into your home.
+        </p>
+        <p style="text-align: center">
+          The Atomiser Connect is the latest addition to the collection,
+          designed bigger to house two bottles of Pure Essential Oil Blends for
+          a wider scent-throw in larger spaces. And offering the choice of app
+          control to schedule and personalise diffusions, plus more...
+        </p>
+      </div>
+
+      <div class="plp-category-icons">
+        <div class="category-item">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_10x.png?v=1718356414"
+            alt="Image Description"
+            sizes="100px"
+            srcset="
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_180x.png?v=1718356414   180w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_360x.png?v=1718356414   360w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_540x.png?v=1718356414   540w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_720x.png?v=1718356414   720w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_900x.png?v=1718356414   900w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_1080x.png?v=1718356414 1080w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_1296x.png?v=1718356414 1296w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_1512x.png?v=1718356414 1512w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_1728x.png?v=1718356414 1728w,
+              //www.aromatherapyassociates.com/cdn/shop/files/In_Home_3_1_2048x.png?v=1718356414 2048w
+            "
+          />
+          <p>PURE ESSENTIAL OIL BLENDS</p>
+        </div>
+        <div class="category-item">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_10x.png?v=1739450640"
+            sizes="100px"
+            srcset="
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_180x.png?v=1739450640   180w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_360x.png?v=1739450640   360w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_540x.png?v=1739450640   540w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_720x.png?v=1739450640   720w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_900x.png?v=1739450640   900w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_1080x.png?v=1739450640 1080w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_1296x.png?v=1739450640 1296w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_1512x.png?v=1739450640 1512w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_1728x.png?v=1739450640 1728w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_connect_kitchen_lifestyle_2048x.png?v=1739450640 2048w
+            "
+          />
+          <p>ATOMISERS</p>
+        </div>
+        <div class="category-item">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_10x.png?v=1718357290"
+            sizes="100px"
+            srcset="
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_180x.png?v=1718357290   180w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_360x.png?v=1718357290   360w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_540x.png?v=1718357290   540w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_720x.png?v=1718357290   720w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_900x.png?v=1718357290   900w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_1080x.png?v=1718357290 1080w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_1296x.png?v=1718357290 1296w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_1512x.png?v=1718357290 1512w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_1728x.png?v=1718357290 1728w,
+              //www.aromatherapyassociates.com/cdn/shop/files/Candle_4_-_Deep_Relax_1920x1080_0bf39849-e263-46e1-af02-c8d8c98a1103_2048x.png?v=1718357290 2048w
+            "
+          />
+          <p>CANDLES</p>
+        </div>
+        <div class="category-item">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_10x.png?v=1718361075"
+            sizes="100px"
+            srcset="
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_180x.png?v=1718361075   180w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_360x.png?v=1718361075   360w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_540x.png?v=1718361075   540w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_720x.png?v=1718361075   720w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_900x.png?v=1718361075   900w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_1080x.png?v=1718361075 1080w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_1296x.png?v=1718361075 1296w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_1512x.png?v=1718361075 1512w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_1728x.png?v=1718361075 1728w,
+              //www.aromatherapyassociates.com/cdn/shop/files/220922-AA-Shot_4-0820_2048x.png?v=1718361075 2048w
+            "
+          />
+          <p>ROOM FRAGRANCE MISTS</p>
+        </div>
+        <div class="category-item">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_10x.png?v=1739447069"
+            sizes="100px"
+            srcset="
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_180x.png?v=1739447069   180w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_360x.png?v=1739447069   360w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_540x.png?v=1739447069   540w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_720x.png?v=1739447069   720w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_900x.png?v=1739447069   900w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_1080x.png?v=1739447069 1080w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_1296x.png?v=1739447069 1296w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_1512x.png?v=1739447069 1512w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_1728x.png?v=1739447069 1728w,
+              //www.aromatherapyassociates.com/cdn/shop/files/atomiser_forest_therapy_pure_essential_oil_blend_2048x.png?v=1739447069 2048w
+            "
+          />
+          <p>HOME FRAGRANCE KITS</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-list product-lists">
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_main_1.png"
+            class="default-image"
+          />
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_1.png"
+            class="hover-image"
+          />
+        </div>
+        <div class="product-card-content">
+          <div class="product-card__main">
+            <div
+              class="collection__product-benefit eyebrow small product-title-main"
+            >
+              voted Best Diffuser at the Stylist Beauty Awards 2024
+            </div>
+            <h5 class="collection__product-title">Atomiser Connect</h5>
+            <div class="product-card__ratings">
+              <div class="star-rating">
+                <div class="stars" style="width: 90%">★★★★★</div>
+                ★★★★★
+              </div>
+              <p class="product-card__ratings__title">(15)</p>
+            </div>
+            <h4 class="collection__product-price-container">
+              <span class="collection__product-price" x-price="519400000"
+                >₫5194000.00</span
+              >
+              <span class="collection__product-size"> / Atomiser Connect </span>
+            </h4>
+          </div>
+
+          <div class="collection__quick-buy-wrapper">
+            <button class="collection__quick-buy btn secondary">
+              Lear more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/RN883301_main.png"
+            class="default-image"
+          />
+
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/RN883301_1.png"
+            class="hover-image"
+          />
+        </div>
+        <div class="product-card-content">
+          <div class="product-card__main">
+            <div
+              class="collection__product-benefit eyebrow small product-title-main"
+            >
+              voted Best Diffuser at the Stylist Beauty Awards 2024
+            </div>
+            <h5 class="collection__product-title">Atomiser Connect</h5>
+            <div class="product-card__ratings">
+              <div class="star-rating">
+                <div class="stars" style="width: 90%">★★★★★</div>
+                ★★★★★
+              </div>
+              <p class="product-card__ratings__title">(99)</p>
+            </div>
+            <h4 class="collection__product-price-container">
+              <span class="collection__product-price" x-price="519400000"
+                >₫5194000.00</span
+              >
+              <span class="collection__product-size"> / Atomiser Connect </span>
+            </h4>
+          </div>
+
+          <div class="collection__quick-buy-wrapper">
+            <button class="collection__quick-buy btn secondary">
+              Lear more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/WEEK24_WEB_IMAGES_DIFFUSER_HEAD_PACKSHOT_3000.png"
+            class="default-image"
+          />
+
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/RN883300_2.png"
+            class="hover-image"
+          />
+        </div>
+        <div class="product-card-content">
+          <div class="product-card__main">
+            <div
+              class="collection__product-benefit eyebrow small product-title-main"
+            >
+              voted Best Diffuser at the Stylist Beauty Awards 2024
+            </div>
+            <h5 class="collection__product-title">Atomiser Connect</h5>
+            <div class="product-card__ratings">
+              <div class="star-rating">
+                <div class="stars" style="width: 90%">★★★★★</div>
+                ★★★★★
+              </div>
+              <p class="product-card__ratings__title">(2)</p>
+            </div>
+            <h4 class="collection__product-price-container">
+              <span class="collection__product-price" x-price="519400000"
+                >₫5194000.00</span
+              >
+              <span class="collection__product-size"> / Atomiser Connect </span>
+            </h4>
+          </div>
+
+          <div class="collection__quick-buy-wrapper">
+            <button class="collection__quick-buy btn secondary">
+              Lear more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/WEEK24_WEB_IMAGES_DIFFUSER_HEAD_PACKSHOT_3000.png"
+            class="default-image"
+          />
+
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/RN883300_2.png"
+            class="hover-image"
+          />
+        </div>
+        <div class="product-card-content">
+          <div class="product-card__main">
+            <div
+              class="collection__product-benefit eyebrow small product-title-main"
+            >
+              voted Best Diffuser at the Stylist Beauty Awards 2024
+            </div>
+            <h5 class="collection__product-title">Atomiser Connect</h5>
+            <div class="product-card__ratings">
+              <div class="star-rating">
+                <div class="stars" style="width: 95%">★★★★★</div>
+                ★★★★★
+              </div>
+              <p class="product-card__ratings__title">(119)</p>
+            </div>
+            <h4 class="collection__product-price-container">
+              <span class="collection__product-price" x-price="519400000"
+                >₫5194000.00</span
+              >
+              <span class="collection__product-size"> / Atomiser Connect </span>
+            </h4>
+          </div>
+
+          <div class="collection__quick-buy-wrapper">
+            <button class="collection__quick-buy btn secondary">
+              Lear more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/WEEK24_WEB_IMAGES_DIFFUSER_HEAD_PACKSHOT_3000.png"
+            class="default-image"
+          />
+
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/RN883300_2.png"
+            class="hover-image"
+          />
+        </div>
+        <div class="product-card-content">
+          <div class="product-card__main">
+            <div
+              class="collection__product-benefit eyebrow small product-title-main"
+            >
+              voted Best Diffuser at the Stylist Beauty Awards 2024
+            </div>
+            <h5 class="collection__product-title">Atomiser Connect</h5>
+            <div class="product-card__ratings">
+              <div class="star-rating">
+                <div class="stars" style="width: 0%">★★★★★</div>
+                ★★★★★
+              </div>
+              <p class="product-card__ratings__title">(0)</p>
+            </div>
+            <h4 class="collection__product-price-container">
+              <span class="collection__product-price" x-price="519400000"
+                >₫5194000.00</span
+              >
+              <span class="collection__product-size"> / Atomiser Connect </span>
+            </h4>
+          </div>
+
+          <div class="collection__quick-buy-wrapper">
+            <button class="collection__quick-buy btn secondary">
+              Lear more
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-image">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/WEEK24_WEB_IMAGES_DIFFUSER_HEAD_PACKSHOT_3000.png"
+            class="default-image"
+          />
+
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/products/RN883300_2.png"
+            class="hover-image"
+          />
+        </div>
+        <div class="product-card-content">
+          <div class="product-card__main">
+            <div
+              class="collection__product-benefit eyebrow small product-title-main"
+            >
+              voted Best Diffuser at the Stylist Beauty Awards 2024
+            </div>
+            <h5 class="collection__product-title product-subtitle">
+              Atomiser Connect
+            </h5>
+            <div class="product-card__ratings">
+              <div class="star-rating">
+                <div class="stars" style="width: 100%">★★★★★</div>
+                ★★★★★
+              </div>
+              <p class="product-card__ratings__title">(15)</p>
+            </div>
+            <h4 class="collection__product-price-container">
+              <span class="collection__product-price" x-price="519400000"
+                >₫5194000.00</span
+              >
+              <span class="collection__product-size"> / Atomiser Connect </span>
+            </h4>
+          </div>
+
+          <div class="collection__quick-buy-wrapper">
+            <button class="collection__quick-buy btn secondary">
+              Lear more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-container"></div>
+  </body>
+</html>

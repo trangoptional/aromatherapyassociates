@@ -1,0 +1,340 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", "Avenir", "Helvetica", "Arial", sans-serif;
+  color: #071d49;
+}
+
+.announcement {
+  background-color: #071d49;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.announcement__container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.announcement__text-title p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f9f6f4;
+  margin-bottom: 15px;
+}
+
+.announcement__text-description p {
+  font-size: 16px;
+  color: #f9f6f4;
+  line-height: 1.6;
+}
+
+.announcement__text-button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.announcement__text-button a,
+.announcement__text-button2 a {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.announcement__text-button a {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.announcement__text-button2 a {
+  color: #fff;
+  border: 2px solid #333;
+}
+
+/* Phần chính */
+.how-it-works {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.how-it-works h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #071d49;
+  font-family: "freight-display-pro", serif;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.step {
+  text-align: center;
+  max-width: 220px;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background-color: #e8e1d5;
+  color: #071d49;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 10px;
+}
+
+.step h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #071d49;
+}
+
+.step p {
+  font-size: 14px;
+  color: #071d49;
+  line-height: 1.4;
+}
+
+.yotpo-loyalty-page-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.yotpo-loyalty-page-container h2 {
+  font-size: 26px;
+  margin-bottom: 40px;
+  color: #071d49;
+  text-align: center;
+  font-family: "freight-display-pro", serif;
+}
+
+.yotpo-loyalty-page-container-list {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; 
+  justify-content: center;
+  align-items: stretch; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.yotpo-loyalty-page-container-card {
+  /* background: #ffffff;
+  padding: 40px;
+  text-align: center;
+  border: 1px solid rgb(233, 226, 214);
+  position: relative;
+  transition: background 0.3s ease;
+  overflow: hidden; */
+
+  background: #ffffff;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgb(233, 226, 214);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Icon */
+.menu-icon {
+  font-size: 20px;
+  color: #071d49;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.yotpo-loyalty-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #a39161;
+  text-transform: uppercase;
+  font-family: "mr-eaves-modern", sans-serif;
+  letter-spacing: 0.18em;
+}
+
+/* Description */
+.yotpo-loyalty-decs {
+  font-size: 14px;
+  color: #071d49;
+}
+
+/* Trạng thái mặc định của card */
+.yotpo-loyalty-page-container-card-active {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Trạng thái hover */
+.yotpo-loyalty-page-container-card-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #071d49;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease, background 0.3s ease;
+  text-transform: uppercase;
+}
+.button-login {
+  padding: 8px 40px;
+  background: rgb(249, 246, 244);
+  color: #071d49;
+}
+
+/* Hover hiệu ứng */
+.yotpo-loyalty-page-container-card:hover
+  .yotpo-loyalty-page-container-card-active {
+  opacity: 0;
+}
+
+.yotpo-loyalty-page-container-card:hover
+  .yotpo-loyalty-page-container-card-hover {
+  opacity: 1;
+}
+
+/* /////////// */
+.yotpo-info-decs {
+  color: #071d49;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-size: 22px !important;
+  font-style: normal;
+  font-weight: 350 !important;
+  line-height: 1.09;
+  margin-bottom: 0 !important;
+  text-align: center;
+}
+.yotpo-redemptions-list {
+  margin-top: 50px;
+}
+.yotpo-redemptions-card {
+  width: 100%;
+  display: flex;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px;
+}
+.yotpo-redemptions-card-active {
+  background: #ffffff;
+  width: 25%;
+  padding: 20px 40px;
+  text-align: center;
+  border: 1px solid rgb(233, 226, 214);
+}
+.yotpo-loyalty-title {
+  margin-bottom: 10px;
+}
+
+/* blog cuối */
+.yotpo-vip-card {
+  display: block;
+  padding: 40px;
+  border: 1px solid rgb(233, 226, 214);
+}
+.yotpo-vip-tier-header {
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgb(233, 226, 214);
+  text-align: center;
+}
+.yotpo-vip-tier-header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.yotpo-vip-tier-header-desc {
+  color: #071d49;
+  font-family: "mr-eaves-modern", sans-serif;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 350 !important;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.yotpo-vip-tier-header-desc-list {
+  list-style-type: circle;
+}
+
+@media screen and (max-width: 678px) {
+  .steps-container {
+    display: block;
+  }
+  .step {
+    margin: 30px auto;
+  }
+
+  .step h3 {
+    font-size: 14px;
+  }
+  .yotpo-redemptions-card {
+    display: block;
+  }
+  .yotpo-redemptions-card-active,
+  .yotpo-vip-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .yotpo-info-title,
+  .announcement__text-title p,
+  .how-it-works h2,
+  .yotpo-loyalty-page-container h2 {
+    font-size: 18px !important;
+  }
+  .yotpo-info-decs {
+    font-size: 14px !important;
+  }
+
+  .yotpo-loyalty-title {
+    font-size: 14px;
+  }
+  .subscribe h4,
+  .footer__block h4 {
+    font-size: 14px !important;
+    margin-bottom: 10px;
+  }
+  .announcement__text-description p {
+    font-size: 14px;
+  }
+
+  .announcement__text-button a,
+  .announcement__text-button2 a {
+    font-size: 10px;
+    padding: 6px 20px;
+  }
+
+  /* trang faq */
+  .page-banner-title {
+    font-size: 20px;
+  }
+
+}

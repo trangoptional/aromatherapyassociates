@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css  -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/rejuvenating-rose-body-trio.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../assets/reponsive/rejuvenating-rose-body-trio-reponsive.css"
+    />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- js  -->
+    <script src="../load-header.js" defer></script>
+    <script src="../load-footer.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <title>Image Slider</title>
+  </head>
+  <div id="header-container"></div>
+  <body>
+    <section class="quote-section quote-section-flex">
+      <div class="banner-left">
+        <div class="vertical-slider">
+          <button id="scrollUp" class="show">&#9650;</button>
+          <div class="thumbnails">
+            <div id="thumbnailList" class="thumbnail-list">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_5.png"
+                class="thumbnail active"
+                onclick="showImage(0)"
+              />
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_main_1.png"
+                class="thumbnail"
+                onclick="showImage(1)"
+              />
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_1.png"
+                class="thumbnail"
+                onclick="showImage(2)"
+              />
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_2.png"
+                class="thumbnail"
+                onclick="showImage(3)"
+              />
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_8.png"
+                class="thumbnail"
+                onclick="showImage(4)"
+              />
+            </div>
+          </div>
+          <button id="scrollDown" class="show">&#9660;</button>
+        </div>
+
+        <div class="main-image">
+          <img
+            id="mainImage"
+            src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_5.png"
+            alt="Main Image"
+          />
+        </div>
+      </div>
+      <div class="banner-right">
+        <p class="tagline">ENRICH & UPLIFT</p>
+        <h1>Rejuvenating Rose Body Trio</h1>
+        <p class="rating">★★★★★ WRITE A REVIEW</p>
+        <p class="points">Earn 1,635,000 points for this product.</p>
+        <p class="links"><a>DETAILS & BENEFITS</a></p>
+        <p class="links"><a>KEY INGREDIENTS</a></p>
+      </div>
+    </section>
+
+    <section class="quote-section product-container">
+      <div class="product-description">
+        <!-- Hình ảnh sản phẩm -->
+        <div class="image-section">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/R142824063_Rejuvenatng_Rose_Body_Trio_lifestyle.png"
+          />
+        </div>
+
+        <!-- Chi tiết sản phẩm -->
+        <div class="details-section">
+          <h1 class="main-title">Details & Benefits</h1>
+          <p class="subtitle">Indulge in self-care and restore optimism</p>
+          <p>Worth £89 | Saving 35%</p>
+          <p>
+            The Rejuvenating Rose Body Trio brings together three hand-picked
+            favourites from our Rose Collection, expertly selected to deeply
+            nourish the skin and uplift the mind.
+          </p>
+          <p>
+            Featuring a Rose Bath & Shower Oil to restore, a Rose Pink Clay Mask
+            to purify, and a Rose Shower Oil to hydrate, this indulgent set is
+            the perfect way to gift back appreciation.
+          </p>
+          <p>
+            This gift set contains:<br />
+            1 x Rose Bath & Shower Oil 55ml<br />
+            1 x Travel Rose Pink Clay Mask<br />
+            1 x Travel Rose Shower Oil 50ml
+          </p>
+
+          <!-- Các phần mở rộng -->
+          <div class="accordion">
+            <div class="expandable" onclick="toggleSection(this)">
+              <div class="title">EMOTIONAL BENEFITS <span>+</span></div>
+              <div class="content">
+                Renowned in aromatherapy for centuries, the scent of rose
+                essential oils is known to uplift your spirit and bring joy to
+                your daily wellbeing rituals. Perfect for boosting your mood
+                before you go out for a rose-tinted evening.
+              </div>
+            </div>
+
+            <div class="expandable" onclick="toggleSection(this)">
+              <div class="title">PHYSICAL BENEFITS <span>+</span></div>
+              <div class="content">
+                Helps nourish the skin and leaves you feeling relaxed and
+                rejuvenated.
+              </div>
+            </div>
+
+            <div class="expandable" onclick="toggleSection(this)">
+              <div class="title">SCENT DESCRIPTION <span>+</span></div>
+              <div class="content">
+                A calming, floral, and fresh scent that promotes well-being and
+                tranquility.
+              </div>
+            </div>
+
+            <div class="expandable" onclick="toggleSection(this)">
+              <div class="title">SENSIBLE CAUTIONS <span>+</span></div>
+              <div class="content">
+                Avoid contact with eyes. Keep out of reach of children. Store
+                away from heat and sunlight.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section ingredients__containers">
+      <h1>Key Ingredients</h1>
+
+      <div class="ingredients-container">
+        <div class="ingredient">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/WEEK5_INGREDIENTS_DAMASK_ROSE_2x_445695b1-cd27-4023-b5bd-78cc39f12420.png"
+            alt="DAMASK ROSE"
+          />
+          <h2>DAMASK ROSE</h2>
+          <p>Lifts the spirits</p>
+        </div>
+        <div class="ingredient">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/WEEK5_INGREDIENTS_GERANIUM_2x_12e9f61c-f8a7-4b25-9da0-4670c83cdbe2.png"
+            alt="GERANIUM"
+          />
+          <h2>GERANIUM</h2>
+          <p>Balancing</p>
+        </div>
+        <div class="ingredient">
+          <img
+            src="//www.aromatherapyassociates.com/cdn/shop/files/WEEK5_INGREDIENTS_PALMAROSA_2x_9849a0f2-ab1b-4e21-9b2c-5239c9f833a4.png"
+            alt="PALMAROSA"
+          />
+          <h2>PALMAROSA</h2>
+          <p>Nourishes the skin</p>
+        </div>
+      </div>
+      <button class="all-ingredients-button">ALL INGREDIENTS</button>
+    </section>
+
+    <section class="quote-section">
+      <div class="section-video-container">
+        <div class="text-section">
+          <h2>How to use</h2>
+          <div class="ingredient step">
+            <span class="number">1</span>
+            <p>
+              Take your essential oil blend and attach directly into The
+              Atomiser diffusion head.
+            </p>
+          </div>
+          <div class="ingredient step">
+            <span class="number">2</span>
+            <p>
+              Remove the metallic lid and insert into The Atomiser, ensuring you
+              align the hole on the side of the diffusion head with the mist
+              icon inside The Atomiser. Pop the metallic lid back on, making
+              sure it sits flush.
+            </p>
+          </div>
+          <div class="ingredient step">
+            <span class="number">3</span>
+            <p>
+              Select your chosen mode, Standard Mode to instantly fill your
+              space from 30 minutes to 3 hours at a time, or Boost for when time
+              is tight once a day.
+            </p>
+          </div>
+          <h4>SENSIBLE CAUTIONS</h4>
+        </div>
+        <div class="image-section">
+          <div class="video-container">
+            <video
+              poster="//www.aromatherapyassociates.com/cdn/shop/files/Atomiser_MG_0983-Edit_1877x.jpg?v=1666178153"
+              src="https://cdn.shopify.com/videos/c/o/v/aefae7d217794013a553c95bae8882ac.mp4"
+            ></video>
+            <div class="play-icon"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section product-list">
+      <h1 class="titles">
+        Explore our Atomisers & other Pure Essential Oil Blends
+      </h1>
+
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/files/RN883304_main_1.png"
+              />
+              <p class="product-title">VOTED BEST DIFFUSER</p>
+              <h2 class="subtitle_1">Atomiser Connect</h2>
+              <div class="rating">★★★★★ (134 Reviews)</div>
+              <p class="product-price">
+                £52,110.00
+                <span class="product-card__size"> / Atomiser Connect </span>
+              </p>
+              <button class="quick-buy">Quick Buy</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/products/RN572010_main.png"
+              />
+              <p class="product-title">HOME</p>
+              <h2 class="subtitle_1">The Atomiser</h2>
+              <div class="rating">★★★★★ (134 Reviews)</div>
+              <p class="product-price">
+                £36,620.00
+                <span class="product-card__size"> / Atomiser Connect </span>
+              </p>
+              <button class="quick-buy">Quick Buy</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/products/RN570010_main.png"
+              />
+              <p class="product-title">BEST DIFFUSER 2024</p>
+              <h2 class="subtitle_1">Atomiser Connect</h2>
+              <div class="rating">★★★★★ (134 Reviews)</div>
+              <p class="product-price">
+                £52,110.00
+                <span class="product-card__size"> / Atomiser Connect </span>
+              </p>
+              <button class="quick-buy">Quick Buy</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/products/RN572010_main.png"
+              />
+              <p class="product-title">HOME</p>
+              <h2 class="subtitle_1">The Atomiser</h2>
+              <div class="rating">★★★★★ (134 Reviews)</div>
+              <p class="product-price">
+                £36,620.00
+                <span class="product-card__size"> / Atomiser Connect </span>
+              </p>
+              <button class="quick-buy">Quick Buy</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/products/RN572010_main.png"
+              />
+              <p class="product-title">HOME</p>
+              <h2 class="subtitle_1">The Atomiser</h2>
+              <div class="rating">★★★★★ (134 Reviews)</div>
+              <p class="product-price">
+                £36,620.00
+                <span class="product-card__size"> / Atomiser Connect </span>
+              </p>
+              <button class="quick-buy">Quick Buy</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="//www.aromatherapyassociates.com/cdn/shop/products/RN572010_main.png"
+              />
+              <p class="product-title">HOME</p>
+              <h2 class="subtitle_1">The Atomiser</h2>
+              <div class="rating">★★★★★ (134 Reviews)</div>
+              <p class="product-price">
+                £36,620.00
+                <span class="product-card__size"> / Atomiser Connect </span>
+              </p>
+              <button class="quick-buy">Quick Buy</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- Pagination Dots -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script>
+      const images = [
+        "//www.aromatherapyassociates.com/cdn/shop/files/RN883304_5.png",
+        "//www.aromatherapyassociates.com/cdn/shop/files/RN883304_main_1.png",
+        "//www.aromatherapyassociates.com/cdn/shop/files/RN883304_1.png",
+        "//www.aromatherapyassociates.com/cdn/shop/files/RN883304_2.png",
+        "//www.aromatherapyassociates.com/cdn/shop/files/RN883304_8.png",
+      ];
+      let currentIndex = 0;
+      let scrollIndex = 0;
+      const thumbnailsPerPage = 4;
+
+      function showImage(index) {
+        currentIndex = index;
+        document.getElementById("mainImage").src = images[currentIndex];
+        document.querySelectorAll(".thumbnail").forEach((thumb, i) => {
+          thumb.classList.toggle("active", i === index);
+        });
+      }
+
+      function updateThumbnailsPosition() {
+        const thumbnailList = document.getElementById("thumbnailList");
+        thumbnailList.style.transform = `translateY(-${scrollIndex * 280}px)`;
+
+        document
+          .getElementById("scrollUp")
+          .classList.toggle("show", scrollIndex > 0);
+        document
+          .getElementById("scrollDown")
+          .classList.toggle(
+            "show",
+            scrollIndex < Math.ceil(images.length / thumbnailsPerPage) - 1
+          );
+      }
+
+      document.getElementById("scrollUp").addEventListener("click", () => {
+        if (scrollIndex > 0) {
+          scrollIndex--;
+          updateThumbnailsPosition();
+        }
+      });
+
+      document.getElementById("scrollDown").addEventListener("click", () => {
+        if (scrollIndex < Math.ceil(images.length / thumbnailsPerPage) - 1) {
+          scrollIndex++;
+          updateThumbnailsPosition();
+        }
+      });
+
+      updateThumbnailsPosition();
+
+      // phần click description
+      function toggleSection(element) {
+        const isOpen = element.classList.contains("open");
+        const allSections = document.querySelectorAll(".expandable");
+
+        allSections.forEach((section) => section.classList.remove("open"));
+
+        if (!isOpen) {
+          element.classList.add("open");
+        }
+      }
+
+      /// phần video
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const videoContainer = document.querySelector(".video-container");
+        const video = videoContainer.querySelector("video");
+        const playIcon = videoContainer.querySelector(".play-icon");
+
+        videoContainer.addEventListener("click", function () {
+          if (video.paused) {
+            video.play();
+            videoContainer.classList.add("playing");
+          } else {
+            video.pause();
+            videoContainer.classList.remove("playing");
+          }
+        });
+      });
+
+      /// phần danh sách sản phẩm
+
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4, 
+        spaceBetween: 20,
+        loop: false,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          1024: { slidesPerView: 4 },
+          768: { slidesPerView: 2 },
+          480: { slidesPerView: 1 },
+        },
+        on: {
+          init: function () {
+            updateNavigationButtons(this);
+          },
+          slideChange: function () {
+            updateNavigationButtons(this);
+          },
+        },
+      });
+
+      function updateNavigationButtons(swiper) {
+        const prevButton = document.querySelector(".swiper-button-prev");
+        const nextButton = document.querySelector(".swiper-button-next");
+
+        // Kiểm tra nếu đang ở slide đầu tiên thì disable Prev
+        if (swiper.isBeginning) {
+          prevButton.classList.add("disabled");
+        } else {
+          prevButton.classList.remove("disabled");
+        }
+
+        // Kiểm tra nếu đang ở slide cuối cùng thì disable Next
+        if (swiper.isEnd) {
+          nextButton.classList.add("disabled");
+        } else {
+          nextButton.classList.remove("disabled");
+        }
+      }
+    </script>
+  </body>
+  <div id="footer-container"></div>
+</html>

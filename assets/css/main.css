@@ -1,0 +1,107 @@
+/* 🌟 Reset CSS & Global Variables */
+:root {
+    /* 🎨 Màu sắc */
+    --primary-color:  #071D49; 
+    --secondary-color: #6c757d; 
+    --background-color: #f8f9fa; 
+    --text-color: #333; 
+    --white-color: #fff;
+    --border-color: #ddd;
+  
+    /* 📏 Kích thước font */
+    --font-small: 14px;
+    --font-medium: 16px;
+    --font-large: 40px;
+    --font-xlarge: 24px;
+  
+    /* 🔠 Font chữ */
+    --font-primary: 'Arial', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+  
+    /* 📦 Khoảng cách */
+    --padding-small: 8px;
+    --padding-medium: 16px;
+    --padding-large: 24px;
+    --margin-small: 8px;
+    --margin-medium: 16px;
+    --margin-large: 24px;
+    --section-margin: 100px;
+  
+    /* 🔥 Hiệu ứng */
+    --transition: all 0.3s ease-in-out;
+  }
+  
+  /* 🏠 Body & Typography */
+  body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-size: var(--font-medium);
+    line-height: 1.6;
+  }
+  
+  section {
+    margin-bottom: var(--section-margin);;
+  }
+  /* ✨ Tiêu đề */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    margin-bottom: var(--margin-small);
+  }
+  
+  h1 { font-size: var(--font-xlarge); }
+  h2 { font-size: var(--font-large); }
+  h3 { font-size: var(--font-medium); }
+  
+  /* 🎨 Liên kết */
+  a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* 🟦 Nút bấm */
+  .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: var(--font-medium);
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  /* 📦 Container chung */
+  .container {
+    margin: 0 auto;
+    padding: var(--padding-medium);
+  }
+  
+  /* 📱 Responsive */
+  @media (max-width: 768px) {
+    body {
+      font-size: var(--font-small);
+
+    }
+    section {
+      margin-bottom: 50px;
+    }
+  
+    .container {
+      padding: var(--padding-small);
+    }
+  }
+  

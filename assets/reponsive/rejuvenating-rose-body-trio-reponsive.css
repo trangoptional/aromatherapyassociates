@@ -1,0 +1,108 @@
+@media screen and (max-width: 768px) {
+  .quote-section-flex {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    gap: 20px;
+    background-color: #fff;
+  }
+
+  /* Phần banner bên trái */
+  .banner-left {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .main-image img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  /* Thumbnail nằm ngang */
+  .vertical-slider {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .thumbnails {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .thumbnail-list {
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+  }
+
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    flex-shrink: 0;
+  }
+
+  #scrollUp,
+  #scrollDown {
+    display: none;
+  }
+
+  /* Bên phải - mô tả sản phẩm */
+  .banner-right {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .banner-right h1 {
+    font-size: 20px !important;
+    margin: 10px 0;
+  }
+
+  .tagline,
+  .rating,
+  .points,
+  .links {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  /* Slide sản phẩm */
+  .product-list {
+    padding: 20px 0;
+  }
+
+  .swiper-slide {
+    width: auto !important;
+  }
+
+  .quick-buy {
+    width: 100%;
+    padding: 12px 0 !important;
+    margin-top: 10px;
+  }
+
+  .titles {
+    font-size: 20px !important;
+    margin: 20px 0 !important;
+  }
+}
