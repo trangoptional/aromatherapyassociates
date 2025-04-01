@@ -282,5 +282,8 @@ header .container {
   .mobile-menu.active {
     display: block !important;
   }
+  .mobile-menu ul li a {
+    font-size: 13px !important ;
+  }
 
 }

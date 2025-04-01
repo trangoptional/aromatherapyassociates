@@ -9,10 +9,8 @@ body {
 
 .quote-section-flex {
   display: flex;
-  /* align-items: flex-start; */
   gap: 40px;
   background-color: #d7c3c3;
-  height: 500px;
   margin-top: 10vh;
   padding: 50px;
   justify-content: center;
@@ -97,12 +95,6 @@ h1 {
   font-style: normal;
   font-weight: 400 !important;
   line-height: 1;
-}
-
-.rating {
-  color: #071d49;
-  font-size: 14px;
-  margin-bottom: 20px;
 }
 
 .points {
@@ -258,7 +250,7 @@ h1 {
   color: #1b2a41;
 }
 .ingredient p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1;
   color: #1b2a41;
@@ -373,38 +365,32 @@ video {
 
 /* css phần list sản phẩm  */
 .product-list {
-  padding :50px 0;
+  padding: 50px 0;
 }
+
+.product-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 90%;
+  margin: auto;
+}
+
+/* Mỗi sản phẩm */
+.product-card {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
 .titles {
   font-size: 40px !important;
   margin-bottom: 40px !important;
   justify-content: center;
   display: flex;
-  color:#071D49 !important;
+  color: #071d49 !important;
 }
-
-.swiper {
-  width: 100%;
-  padding: 20px 0;
-}
-
-.swiper-slide {
-  border-radius: 10px;
-  padding: 15px;
-  text-align: center;
-  transition: transform 0.3s;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.swiper-wrapper {
-  justify-content: center;
-}
-
-.swiper-slide:hover {
-  transform: scale(1.05);
-}
-
 .product-card img {
   max-width: 100%;
   height: auto;
@@ -416,7 +402,7 @@ video {
   margin: 10px 0;
 }
 .subtitle_1 {
-  color:#071D49;
+  color: #071d49;
   margin: 0 auto;
   text-align: center;
   font-size: 18px;
@@ -440,7 +426,7 @@ video {
 }
 
 .quick-buy {
-  color: #071D49;
+  color: #071d49;
   border: none;
   padding: 20px 80px !important;
   border-radius: 5px;
@@ -451,7 +437,7 @@ video {
 }
 
 .quick-buy:hover {
-  background: #071D49;
+  background: #071d49;
   color: white;
 }
 
@@ -464,4 +450,138 @@ video {
 .swiper-pagination {
   position: relative;
   margin-top: 10px;
+}
+
+/* mobile  */
+
+@media screen and (max-width: 678px) {
+  /* css phần banner  */
+
+  .quote-section-flex {
+    display: block;
+    padding: 10px;
+  }
+
+  .vertical-slider {
+    display: none;
+  }
+
+  .main-image {
+    display: flex;
+    width: 90%;
+    height: 250px;
+    margin: 20px auto;
+  }
+
+  .main-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+  }
+  .banner-right {
+    text-align: center;
+    margin: 30px 0;
+  }
+  .tagline {
+    font-size: 13px !important;
+  }
+  .banner-right h1 {
+    font-size: 16px !important;
+  }
+  .rating {
+    font-size: 12px !important;
+    margin-bottom: 10px;
+  }
+  .links {
+    font-size: 12px !important;
+    margin-bottom: 5px;
+  }
+
+  .product-container,
+  .ingredients__containers,
+  .section-video-container,
+  .product-list {
+    margin: 0;
+    padding: 20px;
+  }
+  .product-description {
+    display: block;
+  }
+  .image-section,
+  .image-section img {
+    width: 100%;
+  }
+  .details-section {
+    margin: 20px 0;
+  }
+  .main-title {
+    font-size: 20px !important;
+  }
+  .subtitle,
+  .titles {
+    font-size: 16px !important;
+  }
+  .details-section p {
+    font-size: 13px;
+  }
+  .accordion {
+    margin-top: 20px !important;
+  }
+  .title {
+    font-size: 10px !important;
+  }
+  .content {
+    font-size: 10px !important;
+  }
+
+  /* css blog tiếp  */
+  .ingredients-container {
+    display: block;
+  }
+  .ingredient {
+    margin-bottom: 25px;
+  }
+
+  .ingredients__containers h1 {
+    margin-top: 20px !important;
+    font-size: 20px !important;
+  }
+
+  .ingredient h2 {
+    font-size: 10px !important ;
+  }
+  .ingredient p {
+    font-size: 13px !important ;
+  }
+  .all-ingredients-button {
+    font-size: 10px !important ;
+  }
+
+  /* css phần tiếp  */
+  .section-video-container,
+  .text-section {
+    width: 100%;
+    display: block !important ;
+  }
+  .text-section h2 {
+    font-size: 20px !important ;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .product-lists {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .product-title,
+  .product-price,
+  .quick-buy {
+    font-size: 10px;
+  }
+
+  .subtitle_1 {
+    font-size: 13px !important;
+  }
+  .quick-buy {
+    padding: 10px 20px  !important;
+  }
 }

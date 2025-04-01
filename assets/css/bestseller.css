@@ -136,3 +136,25 @@
 .category-item:hover img {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 678px) {
+  .title {
+    width: 90%;
+  }
+  .plp-default-banner__title {
+    font-size: 30px;
+  }
+  .plp-default-banner__description-wrapper p {
+    font-size: 16px;
+  }
+  .product-list {
+    padding: 0 20px;
+  }
+  .category-list {
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .category-item p {
+    font-size: 12px;
+  }
+}

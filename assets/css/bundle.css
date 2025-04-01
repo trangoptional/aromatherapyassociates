@@ -27,18 +27,7 @@ body {
   width: 100%;
 }
 
-.basetext,
-p {
-  font-family: "mr-eaves-modern", sans-serif;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 350;
-  line-height: 1.09;
-  margin-top: 0;
-}
-
 /* product list */
-
 .product-list {
   display: flex;
   justify-content: center;
@@ -54,9 +43,6 @@ p {
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
-/* .product-card:hover {
-    transform: scale(1.05);
-} */
 
 .product-image {
   position: relative;
