@@ -1,5 +1,5 @@
 body {
-  background-color: #f9f6f4;
+  background-color: #f8f9fa;
 }
 .quote-section {
   margin-bottom: 50px;
@@ -25,6 +25,7 @@ body {
   max-width: 50%;
   text-align: center;
   width: 100%;
+  font-size: 40px !important;
 }
 
 /* product list */

@@ -309,7 +309,6 @@ h2 {
 }
 
 .four-tiles__button {
-  margin-top: auto;
   cursor: pointer;
   color: #071d49;
   text-underline-offset: 3px;

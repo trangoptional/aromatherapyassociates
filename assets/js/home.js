@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
   // swiper banner
-  // new Swiper(".banner-slider", {
-  //   loop: true,
-  //   autoplay: { delay: 3000, disableOnInteraction: false },
-  //   pagination: { el: ".swiper-pagination", clickable: true },
-  //   navigation: {
-  //     nextEl: ".banner-next",
-  //     prevEl: ".banner-prev",
-  //   },
-  // });
+  new Swiper(".banner-slider", {
+    loop: true,
+    autoplay: { delay: 3000, disableOnInteraction: false },
+    pagination: { el: ".swiper-pagination", clickable: true },
+    navigation: {
+      nextEl: ".banner-next",
+      prevEl: ".banner-prev",
+    },
+  });
 
   // Swiper Best Seller
   new Swiper(".best-seller-slider", {
@@ -77,7 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     shopCard.innerHTML = `
       <div class="shop-image">
-        <img src="${shop.img}" alt="${shop.title}" />
+        <a href="./product/rejuvenating-rose-body-trio.html">
+          <img src="${shop.img}" alt="${shop.title}" />
+        </a>
       </div>
       <div class="shop-detail">
         <h4 class="shop-title">${shop.title}</h4>

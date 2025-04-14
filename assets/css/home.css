@@ -112,6 +112,7 @@
   gap: 40px;
   justify-content: center;
   display: flex;
+  padding: 30px;
 }
 .shop-card {
   background: white;
